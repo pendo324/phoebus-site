@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phoebus: privacy</title>
+<meta name="description" content="What Phoebus sends, stores and asks for.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem 4rem; max-width: 42rem;
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 0.5rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.35rem 0; }
+  footer { margin-top: 3rem; font-size: 0.9rem; opacity: 0.75; }
+</style>
+</head>
+<body>
+<p><a href="./">&larr; Phoebus</a></p>
+
+<h1>Phoebus: privacy</h1>
+
+<p>
+  Phoebus has no analytics, no advertising, no crash-reporting SDK and no
+  account of its own: everything you sign in with is your own Reddit account.
+  Nothing about your use of the app is sold, shared or sent to the app's
+  author.
+</p>
+
+<h2>What leaves your device</h2>
+<ul>
+  <li><strong>Reddit.</strong> Reading, voting, saving, posting and chat go
+    to reddit.com under your own credentials, exactly as the official apps
+    do. Some features (polls, web sign-in, modmail) use a reddit.com web
+    session you sign in to yourself.</li>
+  <li><strong>Media hosts.</strong> Images, GIFs and videos are fetched from
+    wherever they are posted: Reddit's CDNs, Imgur, Giphy, Image Chest and
+    others.</li>
+  <li><strong>Third-party keys you enter.</strong> An Imgur, Giphy or Image
+    Chest API key, a Kagi Session Link or an AI provider key is sent only to
+    that service, when you use the feature that needs it.</li>
+  <li><strong>Your own servers, if you set them up.</strong> Notification
+    and subreddit-watcher alerts go to the notification backend and Bark
+    server you configure, on your own network or host.</li>
+  <li><strong>Search.</strong> If you turn on search-engine lookups, the
+    query goes to the engine you chose (Google, Kagi, or another).</li>
+</ul>
+
+<h2>What is stored</h2>
+<ul>
+  <li>Your Reddit sign-in, in the app's own storage on your device.</li>
+  <li>Your settings and, if you enable separate settings per account, a
+    per-account copy of the ones that support it.</li>
+  <li>Optional local caches of images, avatars, link previews and badge
+    books, which you can clear from the app's settings.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Network:</strong> to reach Reddit, the media hosts above, and
+    the notification backend you configure.</li>
+  <li><strong>Notifications:</strong> for alerts your backend delivers, and
+    for subreddit watchers.</li>
+  <li><strong>Photos:</strong> only when you save media to your library.</li>
+  <li><strong>Location:</strong> only if you enable automatic theme switching,
+    to work out sunset and sunrise locally. It is not sent anywhere.</li>
+</ul>
+
+<h2>Updates</h2>
+<p>
+  A release build can check the app's AltStore source once a day to see
+  whether a newer version exists. That check sees the source URL and your IP
+  address, and nothing else; you can turn it off in
+  Settings &rsaquo; Privacy &rsaquo; Automatic Update Checks.
+</p>
+
+<footer>
+  <p>
+    Phoebus is a personal, non-commercial project. It is not affiliated with,
+    endorsed or supported by Apollo Reborn or its maintainers, Christian
+    Selig or Apollo, or Reddit.
+  </p>
+</footer>
+</body>
+</html>
